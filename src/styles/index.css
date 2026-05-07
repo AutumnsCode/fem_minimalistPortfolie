@@ -1,0 +1,107 @@
+@import "tailwindcss";
+
+/* public-sans-regular - latin */
+@font-face {
+  font-display: swap;
+  /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: 'Public Sans';
+  font-style: normal;
+  font-weight: 400;
+  src: url('../assets/fonts/public-sans-v21-latin-regular.woff2') format('woff2');
+  /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+
+/* public-sans-700 - latin */
+@font-face {
+  font-display: swap;
+  /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: 'Public Sans';
+  font-style: normal;
+  font-weight: 700;
+  src: url('../assets/fonts/public-sans-v21-latin-700.woff2') format('woff2');
+  /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+
+/* public-sans-700italic - latin */
+@font-face {
+  font-display: swap;
+  /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: 'Public Sans';
+  font-style: italic;
+  font-weight: 700;
+  src: url('../assets/fonts/public-sans-v21-latin-700italic.woff2') format('woff2');
+  /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+
+/* ibarra-real-nova-regular - latin */
+@font-face {
+  font-display: swap;
+  /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: 'Ibarra Real Nova';
+  font-style: normal;
+  font-weight: 400;
+  src: url('../assets/fonts/ibarra-real-nova-v30-latin-regular.woff2') format('woff2');
+  /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+
+/* ibarra-real-nova-700 - latin */
+@font-face {
+  font-display: swap;
+  /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: 'Ibarra Real Nova';
+  font-style: normal;
+  font-weight: 700;
+  src: url('../assets/fonts/ibarra-real-nova-v30-latin-700.woff2') format('woff2');
+  /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+
+:root {
+  --max-width: 68.75rem;
+
+}
+
+
+@theme {
+  --font-sans: 'Public Sans', sans-serif;
+  --font-serif: 'Ibarra Real Nova', serif;
+
+  --text-sm: 0.875rem;
+  --text-s: 0.75rem;
+  --text-4xl: 2.5rem;
+
+  --color-teal-400: hsl(167 36% 54%);
+  --color-slate-800: hsl(245 10% 22%);
+  --color-slate-400: hsl(243 10% 64%);
+  --color-slate-300: hsl(330 3% 84%);
+
+  --breakpoint-lg: 48.001em;
+}
+
+.text-preset-1 {
+  font-family: var(--font-serif);
+  font-size: 3.125rem;
+  line-height: 1.0;
+  letter-spacing: -0.45px;
+  font-weight: bold;
+}
+
+.text-preset-2 {
+  font-family: var(--font-serif);
+  font-size: var(--text-4xl);
+  line-height: 1.05;
+  letter-spacing: -0.35px;
+  font-weight: bold;
+}
+
+.text-preset-4 {
+  font-family: var(--font-sans);
+  font-size: var(--text-base--line-height);
+  line-height: 1.875;
+}
+
+.text-preset-7 {
+  font-family: var(--font-sans);
+  font-size: var(--text-s);
+  line-height: 1.15;
+  letter-spacing: 2px;
+}
