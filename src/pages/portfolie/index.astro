@@ -1,0 +1,22 @@
+---
+import { getCollection } from "astro:content";
+import BaseLayout from "../../layout/BaseLayout.astro";
+
+const projects = (await getCollection("projects")).sort(
+  (a, b) => a.data.projectId - b.data.projectId,
+);
+---
+
+<BaseLayout title="Portfolie">
+  <h1>Portfolie</h1>
+
+  <ul class="*:block">
+    {
+      projects.map((project) => (
+        <li>
+          <a href={`/portfolie/${project.id}`}>{project.data.title}</a>
+        </li>
+      ))
+    }
+  </ul>
+</BaseLayout>
